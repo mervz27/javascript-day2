@@ -23,7 +23,7 @@
       <!-- SELECTORS -->
       <section id="selectors" class=" px-2 py-5">
         <div class="container">
-          <h2 class="display-5 text-center border-bottom border-1 border-black">SELECTORS</h2>
+          <h2 class="display-5 text-center border-bottom border-1 border-black" id="main-selector">SELECTORS</h2>
           <strong>Single Selector</strong>
           <div id="basic-selector" class="mb-3">
             <p>Return this text using tags</p>
@@ -59,7 +59,7 @@
               <input type="text" name="fixname" id="fix-name" class="form-control bg-secondary-subtle border border-1 border-black">
             </div>
             <div class="col-4">
-              <input type="submit" value="Assign fix value" class="btn btn-success" id="btn-add-fix-name">
+              <input type="submit" value="Assign fix value" class="btn btn-success" id="btn-add-fix-name" >
             </div>            
           </div>
           
@@ -88,30 +88,30 @@
           <a href="#accessors" target="_blank" id="link-tag" 
           class="bg-dark text-decoration-none">Click Me</a>
           
-          <img id="empty-img"></img>
+          <img id="empty-img" ></img>
           
-          <input type="button" value="Random" data-log-in="yes" data-location="bacoor" id="btn-random">
+          <input type="button" value="Random" data-log-in="yes" data-location="bacoor" data-sample1="this is an example" id="btn-random">
 
           <!-- BUTTONS -->
           <div id="attr-cards" class="mt-5">
             <div class="row justify-content-center">
               <!-- SUCCESS -->
-              <div class="col-3">
-                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#successModal" >
+              <div class="col-3">                                                        
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#successModal" id="success-modal">
                   Success Modal
                 </button>
               </div>
 
               <!-- WARNING -->
               <div class="col-3">
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warningModal" >
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#warningModal" id="warning-modal">
                   Warning Modal
                 </button>
               </div>
 
               <!-- SWITCH -->
               <div class="col-3">
-                <button type="button" class="btn btn-danger" >
+                <button type="button" class="btn btn-danger" id="switch-btn">
                   Switch Modal
                 </button>
               </div>
@@ -152,7 +152,7 @@
             <div class="row ">
               
               <div class="col-3">
-                <button type="button" class="btn btn-success btn-card-bg" >
+                <button type="button" class="btn btn-success btn-card-bg" onmouseover="run()">
                   CARD-SUCCESS
                 </button>
               </div>
@@ -189,6 +189,7 @@
           
           <div id="dynamic-content">
             <strong>First String</strong>
+            
           </div>
           
           
@@ -216,7 +217,7 @@
         </div>
       </div>
 
-      <!-- Success Modal -->
+      <!-- Warning Modal -->
       <div class="modal fade" id="warningModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
